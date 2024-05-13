@@ -70,5 +70,12 @@ input.searchInput::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+.menuItem{
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
 }
