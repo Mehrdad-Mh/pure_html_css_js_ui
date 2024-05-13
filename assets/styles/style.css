@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Vazir";
+    src: url(../fonts/Vazir.eot),
+    url(../fonts/Vazir.ttf),
+    url(../fonts/Vazir.woff),
+    url(../fonts/Vazir.woff2);
+}
+
+*{
+    font-family: "Vazir"!important;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Vazir"!important;
+}
+
+nav{
+    background-color: #111;
+    color: white;
+    padding: 0px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+}
+
+.search{
+    display: flex;
+    padding: 10px 20px;
+    background-color: gray;
+    border-radius: 20px;
+  align-items: center;
+}
+
+.search input{
+    border-radius: 10px;
+ outline: none;
+ border: none;
+ background-color: transparent;
+}
+input.searchInput::placeholder {
+    color: lightgray;
+}
+
+.search img{
+    padding-right: 10px;
+}
+
+.limitedOffer{
+    font-size: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+
+}
+
+.logo:hover{
+    transition: all 1s ease-in-out;
+    transform:rotate(45deg) ;
+
+}
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
