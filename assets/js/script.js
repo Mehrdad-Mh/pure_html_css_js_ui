@@ -134,3 +134,18 @@ mahsuleEntekhabiSizes.forEach((size , index) => {
   size.style.color = "white" 
   });
 });
+
+
+const productPay = document.querySelector(".productPay");
+const payment = document.querySelector(".payment")
+const close = document.querySelector(".close")
+
+
+productPay.addEventListener("click" , () => {
+  payment.classList.add("baz")
+});
+
+close.addEventListener("click" , () => {
+  payment.classList.remove("baz")
+});
+

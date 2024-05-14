@@ -21,6 +21,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Vazir"!important;
+    height: auto;
   
 }
 
@@ -246,17 +247,126 @@ input.searchInput::placeholder {
 /*  product section  */
 
 .product{
-    height: 130vh;
+    height: 125vh;
     background-color: whitesmoke;
     position: relative;
-    direction: ltr;
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
+
+/* .payment{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    width: 50%;
+    right: 25rem;
+    bottom: 1rem;
+} */
+
+.payment {
+    text-align: right;
+    width: 500px;
+    height: 560px;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    padding: 40px 30px;
+    -webkit-box-shadow: 1px 1px 34px 10px rgba(0, 0, 0, 0.63);
+    box-shadow: 1px 1px 34px 10px rgba(0, 0, 0, 0.63);
+}
+
+.baz{
+    display: flex;
+}
+
+.payTitle{
+    font-size: 20px;
+    color: rgb(163, 163, 163);
+}
+
+.label{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.payInput{
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+   
+}
+.payInput:focus{
+    
+ border-bottom: 1px solid rgb(170, 170, 170);
+ outline: none;
+}
+
+.cardIcons{
+    display: flex;
+}
+.cardIcon{
+   margin: 0 20px;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.sm{
+    width: 30%;
+}
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -0px;
+    width: 100%;
+    left: 0;
+    transition: all 0.5s ease;
+    background-color: #369e62;
+    border: none;
+    color: white;
+   
+}
+
+.close {
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.payButton:hover{
+  
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    -webkit-box-shadow: 1px 1px 34px 10px rgba(0, 0, 0, 0.63);
+    box-shadow: 1px 1px 34px 10px rgba(0, 0, 0, 0.63);
+}
+
 
 .productImg{
     width: 50%;
     position: absolute;
     top: 10%;
+    left: 5%;
     
 }
 
@@ -282,7 +392,8 @@ input.searchInput::placeholder {
 .sizes
 {
     display: flex;
-    gap: 30px;
+    padding-bottom: 20px;
+    gap: 20px;
    
 }
 .size{
