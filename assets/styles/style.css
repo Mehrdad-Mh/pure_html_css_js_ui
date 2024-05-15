@@ -10,6 +10,8 @@
     font-family: "Vazir"!important;
 }
 
+
+
 html{
     scroll-behavior: smooth;
    
@@ -91,10 +93,11 @@ input.searchInput::placeholder {
 .slider{
     background:url("../image/wall.jpg");
     background-size: cover;
-    /* height: 800px; */
+    height: 800px;
 
     clip-path: polygon(0 0, 100% 0, 90% 85%, 15% 64%);
     overflow-x: hidden;
+    margin-bottom: -5rem;
 
 }
 
@@ -452,7 +455,7 @@ input.searchInput::placeholder {
     background-color: #dfdfdfba;
     padding: 200px;
     margin: 30px;
-    clip-path: polygon(0 25%, 100% 0, 100% 66%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
 }
 
 
@@ -519,8 +522,9 @@ input.searchInput::placeholder {
     display: flex;
 background-color: black;
 height: 600px;
-margin: 2rem 2rem;
-clip-path: polygon(0 0, 100% 33%, 100% 100%, 0% 100%);
+margin: -10rem 0rem;
+clip-path: polygon(0 43%, 100% 0, 100% 100%, 0 100%);
+margin-bottom: 0rem;
 }
 
 .nsItem{
@@ -569,4 +573,77 @@ gap: 50px;
     background-color: #000;
     color: white;
     border: 1px solid white;
+}
+
+
+footer{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.footerRight{
+   
+    
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+ flex: 2;
+    padding: 1rem ;
+}
+.footerMenu{
+    text-align: right;
+}
+
+.fMenuTitle{
+    font-size: 16px;
+}
+.fMenuList{
+    padding: 0;
+    list-style: none;
+}
+
+.fListItem{
+    display: flex;
+    flex-direction: column;
+   padding-bottom: 10px;
+    color: gray;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.fListItem:hover{
+    color: white;
+    font-size:18px;
+    transform: translateX(-10px);
+  
+}
+
+.fMenuList a{
+    color: white;
+    text-decoration: none;
+}
+
+.footerLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fLIcons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.fIcon{
+    width: 50px;
+    height: 50px;
 }
